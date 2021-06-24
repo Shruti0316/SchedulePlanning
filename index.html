@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let's Plan</title>
+        <meta charset="utf-8">
+        <link rel='stylesheet' href='style.css'>
+    </head>
+
+    <body>
+        <!--DIGITAL CLOCK-->
+        <div id='clockDiv'>
+            <span id='clock'></span>
+        </div>
+        <!--TO-DO LIST-->
+        <div id='overlay'>
+            <div id='todo'>
+                <br>
+                <span class="heading">&emsp; Tasks to do</span>
+                <span><button id="shut" onclick="shut()">X</button></span>
+                <div id=tasks>
+                    <form id="addtask">
+                        <input type="date" placeholder="dd/mm/yyyy" class="addDate">&emsp;
+                        <input type="text" placeholder="Add Event..." />
+                        <span><button id='add'>Add</button></span>
+                    </form>
+                    <ul id="list">
+                        <li>
+                            <span class="tdate">16-06-2021</span>
+                            &emsp;
+                            <span class="name">Music Concert</span>
+                            <span class="delete" onclick="remove()">Delete</span>
+                            <span class="complete" onclick="done()">Done</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+
+        <div id="calender">
+            
+                <div id='mname'>JUNE 2021</div>
+                <div id='btn'>
+                    <button id='previous' onclick="previous()">&lt;</button>
+                    <button id='td' onclick="todo()">Add Task</button>
+                    <button id='next' onclick="next()">&gt;</button>
+                </div>
+            <!--DAYS OF WEEK-->
+            <div class="days">
+                <div class="day" id='sday'>Sun&emsp;</div>
+                <div class="day">Mon&emsp;&emsp;</div>
+                <div class="day">Tue&emsp;&emsp;</div>
+                <div class="day">Wed&emsp;&emsp;</div>
+                <div class="day">Thu&emsp;&emsp;</div>
+                <div class="day">Fri&emsp;&emsp;&emsp;</div>
+                <div class="day">Sat&emsp;&emsp;&emsp;</div>   
+            </div>
+        
+            <!--DATE-->
+            <div id="dates">
+
+            </div>
+          
+        </div>
+        
+        <script src='script.js'></script>
+    </body>
+</html>
