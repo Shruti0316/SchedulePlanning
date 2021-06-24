@@ -28,6 +28,7 @@ function pad(val){
         return valstr;
     }
 }
+
 currentTime();
 loadCalender(month,year);
 
